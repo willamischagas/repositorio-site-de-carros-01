@@ -1,0 +1,607 @@
+/* estylo css geral */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    color: green;
+    color: #000;
+    color: #adadad;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    height: 500px;
+    background: #000;
+}
+
+.contemt{
+    max-width: 1280px;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+    
+nav{
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img{
+    width: 40px;
+    height: 40px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: green;
+}
+
+nav ul button{
+    border: 1px solid #0ab421;
+    background: transparent;
+    padding: 8px 40px;
+    cursor: pointer;
+    margin-left: 30px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 40px;
+}
+
+nav ul button:hover{
+    transition: background, color 0.6s;
+    background:#0ab421;
+    color: #fff;
+}
+
+.content .header-block{
+    max-height: 1280px;
+    max-width: 550px;
+    height: 320px;
+    background: green;
+    border-radius: 8px;
+    box-shadow: 1px 0px 10px 0px rgba(248, 244, 244, 0.5);
+    position: relative;
+    z-index: 10;
+    padding: 10px;
+}
+
+.header-block img{
+    width: 50%;
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+}
+
+.header-block .text{
+    position: absolute;
+    bottom: 65%;
+    left: 10%;
+}
+
+.header-block .text h2{
+    color:#fff;
+    margin-bottom: 5px;
+    text-align: right;
+    transform: translateX(-20px);
+    transition: transforn 0.5s;
+}
+
+.header-block .text p{
+    max-width: 450px;
+    color: #fff;
+    text-align: right;
+    transform: translateX(-20px);
+    transition: transforn 0.4s;
+}
+
+.header-block span{
+    color: #0a0a0a;
+}
+
+/* sobre */
+
+.sobre{ 
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: 50px 10px;
+}
+
+.text h2{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #000;
+}
+
+.text h3{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    color: #000;
+    font-weight: 700;
+}
+
+.text p{
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #000000a8;
+    font-weight: 700;
+}
+
+/* produtos catalogo */
+
+section .catalogo{
+    width: 100vw;
+    padding: 100px;
+}
+
+section .filter-car{
+    width: 400px;
+    height: 100px;
+    background: #dedcdc;
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-wrapper-catalogo p{
+    margin-top: 0;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    color: #0a0a0a;
+}
+
+.title-wrapper-catalogo h3{
+    margin-top: 0 auto;
+    display: flex;
+    justify-content: center;
+    color: #090909;
+}
+
+.search-input{
+    width: 700px;
+    height: 50px;
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+    text-indent: 10px;
+}
+
+.search-button{
+    width: 150px;
+    height: 50px;
+    border-radius: 0px 4px 4px 0px;
+    border: none;
+    background-color: green;
+    color:#fff;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: 0.2s ease;
+}
+
+.search-button:hover{
+    background: #a4a4a4;
+    color: green;
+}
+
+.title-wrapper-catalogo{
+    margin-top: 130px;
+    padding-bottom: 20px;
+}
+
+section .car-wrapper{
+    max-width: 1000px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 30px;
+    padding-top: 50px;
+}
+
+section .car-item{
+    height: 400px;
+    background: #dedede;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.car-content{
+    margin: 40px;
+    padding: 40px;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-item img{
+    width: 50%;
+}
+
+.car-item img{
+    display: block;
+}
+
+.car-item h4{
+    width: 90%;
+    color: #060606;
+}
+
+.car-content h4{
+    padding: 20px;
+    display: block;
+    display: contents;
+    flex: center;
+}
+
+.car-item p{
+    width: 90%;
+    font-style: italic;
+    color:#000000;
+}
+
+.car-item p{
+    display: block;
+}
+
+.car-item button{
+    width: 90%;
+    padding: 10px 0px;
+    border: none;
+    background: green;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.car-item button:hover{
+    background: #adadad;
+    color: green;
+}
+
+/* servircos */
+
+.servircos{ 
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: 50px 10px;
+}
+
+.title-wrapper-servircos h3{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: #000000a8;
+    font-weight: 700;
+}
+
+.title-wrapper-servircos .texto p{
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #000000a8;
+    font-weight: 700;
+}
+
+.servircos-content{
+    max-width: 1000px;
+    min-width: 300px;
+    height: 400px;
+    background: hsl(0, 0%, 68%);
+    margin: 0 auto;
+    border-radius: 8px;
+    z-index: 10;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.servircos-content-left img{
+    display: block;
+    display: contents;
+    flex: center;
+}
+
+.left img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    flex: center;
+   
+}
+
+.tes h2{
+    text-align: center;
+    width: 90%;
+    margin-bottom: 20px;
+    color: #060706ed;
+}
+
+.left{
+    width: 50%;
+    min-width: 30%;
+    height: 25%;
+    display: flex;
+    border-radius: 8px;
+}
+
+.right{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 10%;
+}
+
+.right h3{
+    text-align: right;
+    width: 90%;
+    margin-bottom: 20px;
+    color: #060706ed;
+}
+
+.right p{
+    max-width: 90%;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-align: right;
+    color: #0d0d0dcd;
+}
+
+/* Classicos */
+
+.carros{
+    width: 100%;
+    height: 100%;
+    background: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.title-Classicos{
+    padding: 20px 0px;
+    color: #080808ca;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.carro-car-blok{
+    max-width: 1000px;
+    min-height: 300px;
+    height: 600px;
+    background: rgb(245, 244, 244);
+    margin: 0 auto;
+    border-radius: 8px;
+    z-index: 10;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    grid-gap: 30px;
+}
+
+.carro-car-item{
+    max-width: 420px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #dedede3d;
+    border-radius: 4px;
+}
+
+.carro-text-content{
+    max-width: 100%;
+    margin: 50px;
+}
+
+
+.carro-text-content h3{
+    display: flex;
+   justify-content: center;
+   color: #000;
+}
+
+
+.carro-text-content p{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   color: #000;
+}
+
+.carro-car-blok img{
+    width: 64px;
+    height: 64px;
+}
+
+.carro-car-block img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carro-car-item button{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 150px;
+    margin: auto;
+}
+
+.carro-text-content button{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carro-car-block button{
+    width: 100%;
+    width: 198px;
+    height: 40px;
+    border-radius: 4px 4px 4px 4px;
+    border: none;
+    background-color: green;
+    color: white;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: 0.2s ease;
+}
+
+
+.carro-car-item{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.Classicos-content{
+    max-width: 1280px;
+    min-width: 300px;
+    height: 600px;
+    background-color: #0a03033b;
+    margin: 0 auto;
+    border-radius: 8px;
+    z-index: 10;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 250px;
+}
+
+footer .main {
+    width: 100%;
+    height: 200px;
+    background: green;
+    padding: 20px 10px;
+}
+
+.footer-links {
+    max-width: 1000px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer-company, .footer-rental, .footer-contact, .footer-social {
+    color: white;
+    height: 100%;
+    min-height: 100px;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin-bottom: 8px;
+}
+
+footer .last {
+    width: 100%;
+    height: 50px;
+    background: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-social a {
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}

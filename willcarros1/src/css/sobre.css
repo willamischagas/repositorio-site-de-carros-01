@@ -1,0 +1,206 @@
+/* estylo geral */
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    color: white;
+   background-color: black;
+   font-family: sans-serif;
+   max-width: 1280px;
+   margin: 0 auto;
+   padding: 15px;
+}
+
+/* estylo header */
+
+img{
+    height: 50px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: green;
+}
+
+nav ul button{
+    border: 1px solid #0ab421;
+    background: transparent;
+    padding: 8px 40px;
+    cursor: pointer;
+    margin-left: 30px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 40px;
+}
+
+nav ul button:hover{
+    transition: background, color 0.6s;
+    background:#0ab421;
+    color: #fff;
+}
+
+main{
+    text-align: center;
+}
+
+/* sectoin */
+
+.sobre h1{
+    margin-top: 0 auto;
+    padding: 15px;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.sobre h2{
+    padding: 17px;
+    text-align: center;
+}
+
+.sobre h3 span{
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sobre span{
+    text-align: center;
+    color: green;
+    height: center
+}
+
+.sobre img{
+    padding: 26px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-sobre a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.button-sobre .button{
+    height: 50px;
+    width: 50%;
+    border-radius: 50px;
+    padding: 0px 20px;
+    margin: 50px 10px;
+    background-color: green;
+    color:#fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.1s ease; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-sobre .button:hover{
+    color: #090909;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 250px;
+}
+
+
+footer .main {
+    width: 100%;
+    height: 200px;
+    background: green;
+    padding: 20px 10px;
+}
+
+.footer-links {
+    max-width: 1000px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer-company, .footer-rental, .footer-contact, .footer-social {
+    color: white;
+    height: 100%;
+    min-height: 100px;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin-bottom: 8px;
+}
+
+footer .last {
+    width: 100%;
+    height: 50px;
+    background: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-company a h6{
+    text-align: center;
+    color: #fbfefb;
+}
+
+.footer-rental a h5{
+    text-align: center;
+    color:#fff;
+}
+
+.footer-social a{
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
